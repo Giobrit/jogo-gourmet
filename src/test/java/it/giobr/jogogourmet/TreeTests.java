@@ -53,11 +53,11 @@ public class TreeTests {
     @Test
     public void testAddAtRight(){
         tree.goRight();
-        tree.add("frito", "Arroz");
+        tree.add("cereal", "Arroz");
         tree.reset();
 
         tree.goRight();
-        Assertions.assertEquals(tree.getCurrentLabel(), "frito");
+        Assertions.assertEquals(tree.getCurrentLabel(), "cereal");
         tree.goLeft();
         Assertions.assertEquals(tree.getCurrentLabel(), "Arroz");
 
